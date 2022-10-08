@@ -163,6 +163,7 @@
 		$con->query("update tblusers set status = 0 where ID = $vid");
 		
 	};
+	/*new branche sibaz2*/
 	
 
 	exit("<meta http-equiv='refresh' content='0; url=index.php'>");
