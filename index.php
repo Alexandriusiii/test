@@ -9,6 +9,22 @@
       echo "<script>window.location.href = 'index.php'</script>";     
     } 
 
+if(isset($_POST['submit']))
+  {
+    
+    $fname=$_POST['fname'];
+   
+
+    $query = mysqli_query($con, "insert into tblusers (TaskName) values ('$fname')");
+
+      if($query){
+        
+        echo "<script type='text/javascript'> document.location ='index.php'; </script>";
+
+      }else{
+        echo "<script>alert('Something Went Wrong. Please try again');</script>";
+      }
+   }
   //code for undone
 /*   if(isset($_GET['undone']))
     {
@@ -49,17 +65,20 @@
               </div> -->
            <!--  Button Add New Task  -->
                   <div class="col-sm-8" align="right">
-
+                  <form method="POST"> 
                     <div class="input-group mb-3 input-group-lg">
-                        <input type="text" class="form-control" placeholder="Введите задачу" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                       
+                       
+                      <input type="text" class="form-control" name="fname" placeholder="Введите задачу" aria-label="Recipient's username" aria-describedby="basic-addon2">
                       
-                      <a href="insert.php" class="btn btn-lg btn-outline-primary">
+                      <button href="insert.php" class="btn btn-lg btn-outline-primary" name="submit">
                         <i class="material-icons">&#xE147;</i> 
                         <span>Add New Task...</span>
-                      </a>
+                      </button>
+                 
 
-                  </div>
-                     
+                     </div>
+                  </form>
 
                    </div>
 
