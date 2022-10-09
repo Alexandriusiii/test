@@ -1,9 +1,14 @@
 
   body {
-    color: #566787;
+    color: #7f848d;
     background: #262935;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
   }
+
+  .input-task{
+    height: calc(1.5em + 1rem + 4px)!important;
+}
 
   .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
       background: #11031f;

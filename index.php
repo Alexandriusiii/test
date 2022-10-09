@@ -47,6 +47,7 @@ if(isset($_POST['submit']))
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="styles.css" rel="stylesheet" type="text/css">
 
@@ -69,7 +70,7 @@ if(isset($_POST['submit']))
                     <div class="input-group mb-3 input-group-lg">
                        
                        
-                      <input type="text" class="form-control" name="fname" placeholder="Введите задачу" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <input type="text" class="form-control input-task" name="fname" placeholder="Введите задачу" aria-label="Recipient's username" aria-describedby="basic-addon2">
                       
                       <button href="insert.php" class="btn btn-lg btn-outline-primary" name="submit">
                         <i class="material-icons">&#xE147;</i> 
