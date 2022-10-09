@@ -143,3 +143,21 @@
       margin-top: 10px;
       font-size: 13px;
   }
+
+@media (max-width: 992px) { 
+
+.task-input .col-sm-8{
+  flex-direction: column;
+  display: flex;
+  max-width: 0;
+}
+
+ .action-buttons{
+    flex-direction: column;
+    display: flex;
+    max-width: 0!important;
+
+ } 
+
+
+}

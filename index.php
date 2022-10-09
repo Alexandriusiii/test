@@ -57,7 +57,7 @@ if(isset($_POST['submit']))
 </head>
 <body>   
 <div class="container-xl container-sm">
-    <div class="table-responsive">
+    <div class="table">
       <div class="table" style="background-color: white;">
         <div class="table-title">
             <div class="row">
@@ -65,7 +65,7 @@ if(isset($_POST['submit']))
                   <h2>User's <b>Tasks</b></h2>
               </div> -->
            <!--  Button Add New Task  -->
-                  <div class="col-sm-8" align="right">
+                  <div class="task-input col-sm-8 " align="right">
                   <form method="POST"> 
                     <div class="input-group mb-3 input-group-lg">
                        
@@ -83,7 +83,7 @@ if(isset($_POST['submit']))
 
                    </div>
 
-                    <div class="col-sm-4" align="right">
+                    <div class="action-buttons col-sm-4 " align="right">
                      <div class="btn-group"  role="group" aria-label="Basic mixed styles example">
                           <button type="button" class="btn btn-sm btn-outline-danger">Активные</button>
                           <button type="button" class="btn btn-sm btn-outline-warning">Отложенные</button>
@@ -115,7 +115,7 @@ if(isset($_POST['submit']))
       ?>
            <tr>
               <td class="col-sm-1"><?php echo $cnt;?></td>
-              <td><?php echo $row['TaskName'];?></td>
+              <td class="col-sm-6"><?php echo $row['TaskName'];?></td>
              
               <td><?php echo $row['CreationDate'];?></td>
               <td>
