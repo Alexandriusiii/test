@@ -83,17 +83,17 @@ if(isset($_POST['submit']))
 
                    </div>
 
-                    <div class="col-sm-3" align="right">
+                    <div class="col-sm-4" align="right">
                      <div class="btn-group"  role="group" aria-label="Basic mixed styles example">
-                          <button type="button" class="btn btn-sm btn-danger">Активные</button>
-                          <button type="button" class="btn btn-sm btn-warning">Отложенные</button>
-                          <button type="button" class="btn btn-sm btn-success">Завершенные</button>
+                          <button type="button" class="btn btn-sm btn-outline-danger">Активные</button>
+                          <button type="button" class="btn btn-sm btn-outline-warning">Отложенные</button>
+                          <button type="button" class="btn btn-sm btn-outline-success">Завершенные</button>
                       </div>
                     </div>
                  </div>
           </div>
 
-    <table class="table table-striped table-hover">
+    <table class="table table-hover">
         <thead>
             <tr>
               <th>#</th>
@@ -146,7 +146,7 @@ if(isset($_POST['submit']))
      </table>
 
     <h5>Выполнено</h5>      
-    <table class="table table-striped table-hover">
+    <table class="table table-hover">
         <thead>
             <tr>
               <th>#</th>
