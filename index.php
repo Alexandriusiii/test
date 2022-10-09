@@ -97,7 +97,7 @@ if(isset($_POST['submit']))
             <tr>
               <th>#</th>
               <th>Name</th>
-              <th>Task's Description</th>
+              
               <th>Date</th>                      
             </tr>
         </thead>
@@ -115,7 +115,7 @@ if(isset($_POST['submit']))
            <tr>
               <td class="col-sm-1"><?php echo $cnt;?></td>
               <td><?php echo $row['TaskName'];?></td>
-              <td><?php echo $row['TaskDesc'];?></td>
+             
               <td><?php echo $row['CreationDate'];?></td>
               <td>
                     <!-- DONE 1-->
@@ -150,7 +150,7 @@ if(isset($_POST['submit']))
             <tr>
               <th>#</th>
               <th>Name</th>
-              <th>TaskDesc</th>   
+               
               <th>Date</th>                      
             </tr>
         </thead>
@@ -167,7 +167,7 @@ if(isset($_POST['submit']))
       <tr>
           <td class="col-sm-1"><?php echo $cnt;?>   </td>
           <td><s><?php  echo $row['TaskName'];?></s></td>
-          <td><s><?php  echo $row['TaskDesc']?> </s></td>
+          
           <td>   <?php  echo $row['CreationDate']?> </td>
           <td>
             <!-- UNDONE 2-->
