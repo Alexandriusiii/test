@@ -56,9 +56,9 @@ if(isset($_POST['submit']))
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>   
-<div class="container-xl">
+<div class="container-xl container-sm">
     <div class="table-responsive">
-      <div class="table-wrapper">
+      <div class="table" style="background-color: white;">
         <div class="table-title">
             <div class="row">
            <!--    <div class="col-sm-2">
