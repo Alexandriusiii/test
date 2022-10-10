@@ -144,20 +144,46 @@
       font-size: 13px;
   }
 
-@media (max-width: 992px) { 
-
-.task-input .col-sm-8{
-  flex-direction: column;
-  display: flex;
-  max-width: 0;
+@media (min-width: 992px){
+ .task-input{
+   flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+ }
+  
 }
+
+
+@media (min-width: 576px and max-width: 992px) { 
+
+  .task-input{
+    flex-direction: column;
+    display: flex;
+    max-width: 236px!important;
+    flex: 236px!important;
+  }
 
  .action-buttons{
     flex-direction: column;
     display: flex;
-    max-width: 0!important;
+    max-width: 236px!important;
+    flex: 236px!important;
 
  } 
 
-
 }
+
+@media ( max-width: 576px){
+  .task-input{
+
+  }
+  .field-input{
+     flex: 100%!important;
+    max-width: 100%;
+
+  }
+  .btn-addtask{
+     flex: 100%!important;
+    max-width: 100%;
+  }
+}
+

@@ -45,12 +45,13 @@ if(isset($_POST['submit']))
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   
+     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="styles.css" rel="stylesheet" type="text/css">
-
+  
+<link href="styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -65,14 +66,14 @@ if(isset($_POST['submit']))
                   <h2>User's <b>Tasks</b></h2>
               </div> -->
            <!--  Button Add New Task  -->
-                  <div class="task-input col-sm-8 " align="right">
+                  <div class="task-input " align="right">
                   <form method="POST"> 
                     <div class="input-group mb-3 input-group-lg">
                        
                        
-                      <input type="text" class="form-control input-task" name="fname" placeholder="Введите задачу" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <input type="text" class="field-input form-control" name="fname" placeholder="Введите задачу" aria-label="Recipient's username" aria-describedby="basic-addon2">
                       
-                      <button href="insert.php" class="btn btn-lg btn-outline-primary" name="submit">
+                      <button href="insert.php" class="btn-addtask btn btn-lg btn-outline-primary" name="submit">
                         <i class="material-icons">&#xE147;</i> 
                         <span>Add New Task...</span>
                       </button>
