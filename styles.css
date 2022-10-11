@@ -144,6 +144,10 @@
       font-size: 13px;
   }
 
+  .field-input{
+    height: 55px!important;
+  }
+
 @media (min-width: 992px){
  .task-input{
    flex: 0 0 66.666667%;
