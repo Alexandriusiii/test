@@ -115,7 +115,7 @@ if(isset($_POST['submit']))
            {
       ?>
            <tr>
-              <td class="col-sm-1"><?php echo $cnt;?></td>
+              <td class="first_column col-sm-1"><?php echo $cnt;?></td>
               <td class="col-sm-6"><?php echo $row['TaskName'];?></td>
              
               <td><?php echo $row['CreationDate'];?></td>
@@ -167,7 +167,7 @@ if(isset($_POST['submit']))
           while ($row=mysqli_fetch_array($ret)) {
      ?>
       <tr>
-          <td class="col-sm-1"><?php echo $cnt;?>   </td>
+          <td class="first_column col-sm-1"><?php echo $cnt;?>   </td>
           <td><s><?php  echo $row['TaskName'];?></s></td>
           
           <td>   <?php  echo $row['CreationDate']?> </td>
